@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Container */
+.recipe-container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.recipe-header {
+  text-align: center;
+  padding: 5px;
+  background: url("https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D")
+    no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 80px;
+}
+
+.recipe-header h1 {
+  font-size: 2.5rem;
+  color: black;
+  text-shadow: 1px 3px 5px white;
+}
+
+.recipe-header p {
+  font-size: 1.2rem;
+  color: black;
+  text-shadow: 1px 3px 8px white;
+}
+
+/* Recipe Content */
+.recipe-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+
+}
+
+.recipe-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-item h2 {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #d2691e;
+}
+
+.recipe-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.recipe-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* tips section*/
+
+.scroll-tips {
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .tips-header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .tips-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tips-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 1rem;
+  }
+  
+  .tips-item {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .tips-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tips-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  .tips-image {
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    margin-bottom: 1rem;
+    object-fit: cover; /* Keeps the image proportionate */
+  }
+  
+  /* Adjustments for the last column */
+  .tips-container .tips-item:nth-child(4) {
+    grid-column: span 3; /* Make the last column span 3 columns */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .tips-container {
+      grid-template-columns: 1fr; /* Stack into 1 column */
+    }
+}
+  
+
+/*guildlines for healty eating */
+.scroll-nutrition {
+    padding: 2rem;
+  }
+  
+  .scroll-nutrition h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .nutrition-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 2rem;
+  }
+  
+  .nutrition-item {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .nutrition-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .nutrition-container {
+      grid-template-columns: 1fr; /* Stack into 1 column */
+    }
+  }
+  

@@ -1,0 +1,131 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    color: black;
+    background-color: white;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 30px;
+    transform: translateY(-10px);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin-right: 160px;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    font-size: 1rem;
+  }
+  
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffd700;
+  }
+  
+  .active-link {
+    font-weight: bold;
+    color: #ffd700;
+  }
+  .contact-button {
+    transform: translate(115px, -10px);
+    
+  }
+  
+  
+  .contact-button1 {
+    margin-left: 100px;
+    color: white;
+    background-color: #ffd700;
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+
+  }
+
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 4px;
+    background-color: red;
+    border-radius: 2px;
+  }
+
+
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      gap: 15px;
+      z-index: 1;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+  
+    .nav-links li a.active-link {
+      font-weight: bold;
+      border-bottom: 2px solid white;
+    }
+  }
+  
+  /* Styling for buttons */
+  .contact-button1 {
+    background-color: #ffd700;;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: translateX(-45px);
+  }
+  
+  /* Add hover effect for buttons */
+  .contact-button1:hover {
+    background-color: #ffd719;
+  }

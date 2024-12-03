@@ -1,0 +1,588 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 200px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.hero-content {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  margin-top: -56px;
+}
+
+.hero-content h1 {
+  font-family: "PT Sans Narrow";
+  font-size: 7.5rem;
+  font-weight: 100;
+  color: red;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+#Ultimate {
+  color: black;
+  font-family: "Arial";
+  font-weight: 500;
+  background-color: yellow;
+}
+
+.hero-content p {
+  transform: translateY(30px);
+  font-family: "Dancing Script";
+  font-size: 1.8rem;
+  color: black;
+  margin-left: 50px;
+}
+
+.cta-button {
+  transform: translateY(70px);
+  padding: 5px 30px;
+  margin-left: 50px;
+  background-color: #ffd700;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  height: 50px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: black;
+  color: #ffd700;
+  border: 1px solid #ffd700;
+}
+
+.hero-image img {
+  width: 100%;
+  width: 750px;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(100px);
+}
+
+/* Why Choose Us section */
+.why-choose-us {
+  padding: 100px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  opacity: 1; /* Initial state */
+  transform: translateY(50px); /* Initial state with a slight downward shift */
+  transition: opacity 1s ease, transform 1.5s ease; /* Smooth transition */
+
+  .choose {
+    color: rgb(47, 45, 45);
+    font-size: 4.3rem;
+    margin: 20px;
+  }
+  .experiencewithfood {
+    font-size: 2rem;
+  }
+}
+
+.why-choose-us.fade-in {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Original position */
+}
+
+.why-choose-us p {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+.sectiontwo {
+  display: flex;
+  flex-direction: row;
+  p {
+    margin: 100px 60px;
+
+    line-height: 40px;
+  }
+}
+#img {
+  width: 150%;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+/* Featured Recipes */
+.featured-recipes {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fdfdfd;
+}
+
+.featured-recipes h2 {
+  font-size: 4.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  #recipes {
+    background-color: yellow;
+    font-family: "Dancing Script";
+    font-size: 5rem;
+  }
+}
+
+.featured-recipes p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item {
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
+  text-align: left;
+  padding: 0;
+  margin-top: 150px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.carousel-item img {
+  width: 100%;
+  max-width: 100%;
+  height: inherit;
+  object-fit: cover;
+  image-rendering: auto;
+}
+
+.carousel-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.carousel-item p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #333;
+  margin: 100px 30px 30px 30px;
+  transition: color 0.3s ease;
+}
+
+.carousel-btn:hover {
+  color: #555;
+}
+
+.carousel-btn.prev {
+  position: absolute;
+  left: 10px;
+}
+
+.carousel-btn.next {
+  position: absolute;
+  right: 10px;
+}
+
+/* Explore Meals*/
+.explore-meals {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.explore-meals h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 4.5rem;
+  color: rgb(47, 45, 45);
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.sectionexplore {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+  gap: 20px; /* Space between columns */
+  align-items: start; /* Align items to the top */
+  padding: 20px;
+}
+
+.firstcolumn,
+.secondcolumn {
+  font-size: 20px;
+  line-height: 1.9;
+}
+
+.thirdcolumn img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add slight rounding for aesthetics */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Optional: Add media query for smaller screens */
+@media (max-width: 768px) {
+  .sectionexplore {
+    grid-template-columns: 1fr; /* Stack columns on small screens */
+    gap: 15px;
+  }
+
+  .thirdcolumn img {
+    margin: 0 auto; /* Center image in smaller view */
+  }
+}
+
+/* Tips & Nutrition Section */
+.tips-nutrition {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.tipsheader {
+  display: flex;
+  justify-content: center;
+  font-size: 4.5rem;
+  color: rgb(47, 45, 45);
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+/* Main Container for the Two Columns */
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Tips column takes 1/3 space, content takes 2/3 */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Tips Column (Sticky) */
+.tips {
+  position: sticky;
+  top: 40px;
+  align-self: start;
+  padding: 20px;
+  border-right: 1px solid gray;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* Content Column */
+.content {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Benefits Section */
+.benefits {
+  margin-bottom: 20px;
+}
+#imagesone,
+#imagestwo {
+  width: 450px;
+  height: 400px;
+  gap: 15px;
+  margin: 10px;
+}
+
+#imagesthree {
+  width: 450px;
+  height: 400px;
+  margin: 10px;
+}
+.divimage {
+  display: flex;
+  flex-direction: row;
+}
+
+.benefits-text {
+  font-size: 1.1rem;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr; /* Stack tips and content */
+  }
+
+  /* Hero section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px 150px 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-content {
+    flex: 1;
+    text-align: left;
+  }
+
+  .hero-content h1 {
+    font-family: "PT Sans Narrow";
+    font-size: 4rem;
+    font-weight: 100;
+    color: red;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  #Ultimate {
+    color: black;
+    font-family: "Arial";
+    font-weight: 500;
+    background-color: yellow;
+  }
+
+  .hero-content p {
+    transform: translate(-35px, -5px);
+    font-family: "Dancing Script";
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  .cta-button {
+    transform: translateY(15px);
+    background-color: #ffd700;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 50px;
+    transition: background-color 0.3s;
+  }
+
+  .cta-button:hover {
+    background-color: black;
+    color: #ffd700;
+    border: 1px solid #ffd700;
+  }
+
+  .hero-image img {
+    width: 100%;
+    width: 450px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  /* Why Choose Us section */
+  .why-choose-us {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    text-align: center;
+    opacity: 1; /* Initial state */
+    transition: opacity 1s ease, transform 1.5s ease; /* Smooth transition */
+
+    .choose {
+      color: #333;
+      font-size: 3.7rem;
+      margin: 5px;
+    }
+    .experiencewithfood {
+      font-size: 1.5rem;
+    }
+  }
+
+  .why-choose-us.fade-in {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Original position */
+  }
+  .sectiontwo {
+    display: flex;
+    flex-direction: column;
+    p {
+      margin: 30px 5px;
+      line-height: 1.5rem;
+      font-size: 1.2rem;
+    }
+  }
+  #img {
+    width: 100%;
+    margin: 4px 4px 5px 1px;
+  }
+
+  /* Featured Recipes */
+  .featured-recipes {
+    text-align: center;
+    background-color: #fdfdfd;
+    margin-top: 50px;
+  }
+
+  .featured-recipes h2 {
+    font-size: 3.7rem;
+    color: #333;
+    #recipes {
+      background-color: yellow;
+      font-family: "Dancing Script";
+      font-size: 5rem;
+    }
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .carousel-item {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    text-align: left;
+    padding: 0;
+    margin-top: 50px;
+  }
+  .carousel-item img {
+    width: 100%;
+    max-width: 100%;
+    height: inherit;
+    object-fit: cover;
+    image-rendering: auto;
+  }
+
+  .carousel-btn {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #333;
+    margin: 100px 30px 30px 30px;
+    transition: color 0.3s ease;
+  }
+
+  .carousel-btn:hover {
+    color: #555;
+  }
+
+  .carousel-btn.prev {
+    position: absolute;
+    left: 5px;
+  }
+
+  .carousel-btn.next {
+    position: absolute;
+    right: 5px;
+  }
+
+  /*explore meals*/
+
+  .explore-meals {
+    padding: 10px 30px;
+    background-color: #ffffff;
+  }
+
+  .explore-meals h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3.7rem;
+    color: rgb(47, 45, 45);
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .sectionexplore {
+    padding: 10px;
+  }
+
+  .firstcolumn,
+  .secondcolumn {
+    font-size: 1.1rem;
+    line-height: 1.1;
+  }
+
+  .thirdcolumn img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 2px;
+  }
+
+  /* Tips & Nutrition Section */
+  .tips-nutrition {
+    padding: 10px 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  .tipsheader {
+    display: flex;
+    justify-content: center;
+    font-size: 3.7rem;
+    color: #333;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  /* Main Container for the Two Columns */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+  }
+
+  /* Tips Column (Sticky) */
+  .tips {
+    padding: 3px;
+    margin: 4px;
+    font-size: 1.0rem;
+    line-height: 1.1;
+    position: relative;
+  }
+
+  /* Content Column */
+  .content {
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  /* Benefits Section */
+  .benefits {
+    margin-bottom: 10px;
+  }
+    #imagesone,
+    #imagestwo {
+      width: 400px;
+      height: 400px;
+      gap: 10px;
+      margin: 10px;
+    }
+
+    #imagesthree {
+      width: 400px;
+      height: 400px;
+      margin: 10px 10px 10px 18px;
+    }
+    .divimage {
+      display: flex;
+      flex-direction: column;
+      margin-left: 8px;
+    }
+
+    .benefits-text {
+      font-size: 1rem;
+    }
+  }
+

@@ -1,0 +1,105 @@
+/* General Container Styling */
+.tips-nutrition-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+}
+
+/* Header Styling */
+.tips-nutrition-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tips-nutrition-header h1 {
+  font-size: 2.5rem;
+  color: black;
+}
+
+.tips-nutrition-header p {
+  font-size: 1.1rem;
+  color: black;
+}
+
+/* Section Styling */
+.nutrition-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  opacity: 0; /* Initial state for scroll animation */
+  transition: opacity 0.6s ease-in-out;
+}
+
+.nutritionsec {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+ 
+}
+
+.nutrition-section.fade-in {
+  opacity: 1; /* Applied when scrolled into view */
+}
+
+/* Content Styling */
+.nutrition-content {
+  flex: 1 1 60%;
+  padding: 20px;
+  border-radius: 1px;
+  margin-right: 20px;
+}
+
+.nutrition-content h2 {
+  color: black;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.nutrition-content p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: black;
+}
+
+.nutrition-content ul {
+  padding-left: 20px;
+}
+
+.nutrition-content ul li {
+  margin-bottom: 10px;
+}
+
+/* Image Styling */
+.nutrition-image {
+  flex: 1 1 30%;
+}
+
+.nutrition-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nutrition-section {
+    flex-direction: column;
+  }
+
+  .nutrition-content,
+  .nutrition-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tips-nutrition-header h1 {
+    font-size: 2rem;
+  }
+
+  .nutrition-content h2 {
+    font-size: 1.5rem;
+  }
+}
